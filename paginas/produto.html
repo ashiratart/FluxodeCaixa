@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/css/produtos/produto.css">
+</head>
+<script src="/js/index.js"></script>
+<body>
+    <main class="cadastro">
+        <div class="emp">
+            <input id="calcu" type="button" value="Calc">
+        </div>
+        <div class="Dcadastro">
+            <span>Produto:</spa><input type="text" name="Tnome" id="nome" placeholder="Leg"> 
+            <span>Código:</span><input type="text" name="Tcode" id="code" placeholder="123A45B">
+            <span>Preço:</span><input type="text" name="Tpreco" id="preco" placeholder="R$10.0">
+            <span>Quantidade:</span><input type="number" name="Tquante" id="quante" placeholder="10" min="0">
+            <input type="button" value="ADICIONAR" id="add" onclick="add()">
+        </div>
+        <div class="tabela">
+            <label for="Pcadastro">Produtos Cadastrados</label>
+            <table id="Iprodutos">
+                <tr>
+                    <th>Produto</th>
+                    <th>Código</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td id="c1">Arroz</td>
+                    <td id="c2">123A45B</td>
+                    <td id="c3">R$25</td>
+                    <td id="c4">50</td>
+                </tr>
+            </table>
+        </div>
+        <div class="fim">
+            <input id="cancela" type="button" value="Cancelar" onclick="canc()">
+            <input id="fina" type="button" value="Finalizar" onclick="fina()">
+        </div>
+    </main>
+    <script src="/js/profutos/dados.js"></script>
+</body>
+</html>
